@@ -1,0 +1,422 @@
+<!-- 第二版 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="echarts.min.js"></script>
+    <link rel="stylesheet" href="shijing.css">
+    <link rel="stylesheet" href="echart.css">
+</head>
+<body>
+<div class="flowerBox">
+ 
+  <div class="sticky-content">
+
+     <div class="bg" style="transform: translate(0rem,0rem)scale(1); opacity: 1;display: block;">
+   <img src="images/bg.jpg">
+     </div>
+     <div class="zhiranliao">
+        <img src="images/制染料.png" alt="">
+    </div>
+    <div class="huitu">
+        <img src="images/绘图案.png" alt="">
+    </div>
+    <div class="ranbu">
+        <img src="images/浸染布料.png" alt="">
+    </div>
+    <div class="AR-face">
+        <img src="images/introduceFloat.png" alt="虚拟穿戴AR跳转">
+        <h2>AR植物染虚拟穿戴</h2>
+       </div>
+
+     <section class="part1" style="transform: translate(0rem,0rem) scale(1); ">
+    <div class="con">
+        <div class="bg" style="transform: translate(0rem,0rem)scale(1); opacity: 1;display: block;mask-repeat: repeat-x;">
+            <img src="images/bg2.png" >
+        </div>
+       
+        <img src="images/flower1.png" id="flower1">
+        <img src="images/flower2.png" id="flower2">
+        <img src="images/flower3.png" id="flower3">
+        <img src="images/fly.gif" id="fly">
+        <img src="images/花右1.gif" id="flower4">
+        <img src="images/water.gif" id="lianyi">
+        <img src="images/biaoti.png" id="bigtitle">
+        <img src="images/shuibowen.png" id="shuibowen">
+    
+        <div class="zhonglei">
+         <div class="shijing-text">
+            <h2>《诗经》植物</h2>
+            <p>《 诗 经 》中三百零五篇中有近半数诗篇中提及植物<br>与植物相关的字词语句出现次数达三百八十六次,<br>特定植物种类约一百三十种,出现频率之高显示出<br>植物在先民的生产资料中占据着重要地位。 </p>
+          
+         </div>
+         <div class="flower6">
+            <img src="images/flower7.png" alt="">
+         </div>
+          <div  id="intorcefloat">
+            <img src="images/introduceFloat.png" alt="">
+          </div>
+          <div id="main">
+          </div>
+       </div>
+
+       <div class="cipin">
+        <div class="cipinbg">
+            <img src="images/cipinbg.png" >
+        </div>
+        
+        <div class="cipintext">
+            <div class="cipin-text">
+                <h2>植物词频</h2>
+            <p>对《诗经》中植物词频进行统计，“桑、葛”出现次数最多<br>对“桑”的描写所用笔墨众多，分布在二十多篇章中<br>从桑叶、桑树、桑果再到桑社、桑根和桑文化<br>与中国农耕文化中的纺织文明紧密相关。</p>
+            </div>
+          </div>
+
+          <div  id="intorcefloat2">
+            <img src="images/introduceFloat.png" alt="">
+          </div>
+          <div id="wordcloud">
+          </div>
+      </div>
+      
+
+        <div class="shuibowen">
+            
+            <canvas id="shuibowencanvasimg" width="1920" height="1620">
+            </canvas>
+
+        </div>
+        <div class="zuoyanwu">
+            <img src="images/banner_zuoyanwu.png" >
+        </div>
+        <div class="zuoyanwu1">
+            <img src="images/banner_zuoyanwu.png" >
+        </div>
+    
+    </div> 
+
+     </section>
+
+   <div class="part2">
+    
+     
+    <div class="ar">
+        <img src="images/introduceFloat.png" id="introduce2" onclick="window.location.href='ar.html';">  
+    </div>
+   
+    <div class="sang">
+        <img src="images/sang.png" alt="">
+       </div>
+
+       <div class="sang-tree">
+        <img src="images/sangtree2.png" alt="">
+    </div>
+     <div class="fangzhi">
+        <h2>纤维纺织植物</h2>
+        <p>《诗经》中纤维纺织材料主要有三种原料丝、麻、葛。<br> 种桑养蚕，桑蚕吐丝结茧，人类用其纺纱织布，为中<br>国丝绸的来源,除了桑以外，还有葛藤、苎麻和大麻。</p>
+     </div>
+     <div class="fangzhibg">
+       <img src="images/bg6.jpg" alt="">
+     </div>
+     
+     <div class="options">
+        
+        <div class="can">
+            <img src="images/蚕.png" >
+        </div>
+        <div class="sangcan-sign">
+            <img src="images/sangcan-sign.png" alt="桑蚕标签" >
+        </div>
+        <div class="sangshen">
+            <img src="images/桑葚.png" alt="">
+        </div>
+        <div class="sangshen-sign">
+            <img src="images/sanshen-sign.png" alt="桑葚标签">
+        </div>
+        <div class="sangshugen">
+            <img src="images/桑树根.png" >
+        </div>
+        <div class="sangshugen-sign">
+            <img src="images/sangshugen-sign.png" alt="桑树根标签">
+        </div>
+     </div>
+     <div class="can-chudian">
+        <div class="chudian1">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="dama-chudian">
+        <div class="chudian2">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="zhuma-chudian">
+        <div class="chudian3">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="can01">
+        <img src="images/can01.png" alt="">
+    </div>
+    <div class="dama01">
+        <img src="images/dama01.png" alt="">
+    </div>
+    <div class="zhuma01">
+        <img src="images/zhuma01.png" alt="">
+    </div>
+    
+
+    <div class="ouma">
+        <div class="ouma-bg">
+            <img src="images/guodu.jpg" alt="">
+        </div>
+        <div class="gema"  id="gema">
+            <img src="images/gema.png" >
+        </div>
+        <div class="dama-card">
+            <img src="images/打麻.png" alt="">
+        </div>
+        <div class="sign01">
+            <img src="images/dana-sign.png" alt="">
+        </div>
+        <div class="ouma1">
+            <img src="images/ouma1.png" alt="">
+        </div>
+        <div class="sign02">
+            <img src="images/ouma-sign.png" alt="">
+        </div>
+        <div class="ouma2" id="ouma2">
+            <img src="images/ouma2.png" alt="">
+        </div>
+        <div class="wanmatuan">
+            <img src="images/挽麻团.png" alt="">
+        </div>
+        <div class="sign03">
+            <img src="images/wanmatuan-sign.png" alt="">
+        </div>
+        <div class="ouma3">
+            <img src="images/ouma3.png" alt="">
+        </div>
+        <div class="shuajiang">
+            <img src="images/刷浆.png" alt="">
+        </div>
+        <div class="sign04">
+            <img src="images/shuajiang-sign.png" alt="">
+        </div>
+        <div class="ouma4">
+            <img src="images/ouma4.png" alt="">
+        </div>
+        <div class="bianzhi">
+            <img src="images/编织.png" alt="">
+        </div>
+        <div class="sign05">
+            <img src="images/bianzhi-sign.png" alt="">
+        </div>
+        <div class="dama02" id="dama02">
+            <img src="images/dama-card.png" alt="">
+        </div>
+       <div class="wanmatuan02" id="wanmatuan02">
+        <img src="images/wanmatuan02.png" alt="">
+       </div>
+        <div class="ouma-text">
+            <img src="images/ouma.png" alt="">
+            <p>《陈风·东门之池》云：“东门之池，可以沤麻”描述了当时<br>提取纤维的手法是通过将植物放进水中，使之变柔韧后洗出纤<br>维，就可以用来织布。《周南·葛覃》中：“是刈是濩，为絺<br>为綌，服之无斁。”意思是将收割的葛藤放入锅中煮，去住柔<br>软的部分，留下纤维制作葛布。可见当时人们已经掌握了快速<br>提取纤维的方法，并且较为普及和娴熟。</p>
+        </div>
+        <div class="p2">
+            <p>《陈风·东门之池》三章文句<br>即在说明古代常见的纤维植物<br>采收后都必须经过浸水的过程。</p>
+        </div>
+   </div>
+    
+
+    </div>
+    
+  <div class="part3">
+    <div class="huacong" id="huacong">
+        <img src="images/huacong2.png" > 
+    </div>
+    <div class="yujin-chudian">
+        <div class="chudian01">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="yujin01">
+        <img src="images/yujin01.png" alt="">
+    </div>
+
+
+
+    <div class="text1">
+        <h2>染料植物</h2>
+        <p>《诗经》中出现了大量关于色彩的词，例如描写红色的词就有“朱、赤、丹、赫、炜、赪”<br> 染料植物提到了荩草、茜草、柘树、蓼蓝和郁金等几类。《小雅.采绿》云：“终朝采绿，<br>不盈一匊, ......终朝采蓝，不盈一襜。”“绿”即为荩草，可染黄、绿，“蓝”为蓼蓝，可<br>染靛也可染蓝。《郑风.出其东风》云：“……缟衣茹藘，聊可与娱”，其中“茹藘”今称<br>茜草，可染红。《大雅.皇矣》中“柘”即为柘树，桑科植物，木材紧实坚韧，木材的心材<br>可提取黄色染料，成为“柘黄”专门用来染制黄色衣服。《大雅.江汉》中的“鬯”今称为<br>郁金、姜黄，多年生草本植物，主要用于染黄 </p>
+   
+     </div>
+     </div>
+
+
+   <div class="part6">
+<!-- 荩草特写 -->
+     <div class="jincao">
+        <img src="images/荩草.png" alt="">
+     </div>
+     <div class="hudie">
+        <img src="images/butterfly left.png" id="hudie_left" alt="左蝴蝶">
+        <img src="images/butterfly right.png" id="hudie_right" alt="右蝴蝶">
+     </div>
+     <div class="jincao-text">
+        <img src="images/jincao-text.png" alt="">
+        <p>《广本草注》描写荩草：“叶似竹而细薄，茎亦圆小。生平泽、溪涧之侧”<br>和今日所见荩草，在形态和生育地上均相同。古人煮其枝叶以“染黄色，<br>极鲜好”，主要用以染制黄色官服，古代王室常驱使百姓采集荩草。《小<br>雅.采绿》中众人“终朝采绿”就是为了应付官员的需求，这也是荩草又称<br>为“王刍”的原因。</p>
+     </div>
+     <div class="jincao-button">
+        <img src="images/introduceFloat.png" id="jincao-button">
+     </div>
+     <div class="huangshangtext">
+        <img src="images/huangshantext.png" alt="">
+     </div>
+     <div class="huangshang">
+        <img src="images/黄裳.png" id="huangshang">
+     </div>
+
+<!-- 茜草特写 -->
+     <div class="xicao">
+        <img src="images/茜草.png" alt="">
+     </div>
+     <div class="xicao-text">
+        <p>茜草为自古即盛行栽培的染料植物，为红色染料，专供染<br>御服之用，称为“染绛”。《郑风.出其东门》所说的“缟<br>衣茹藘”意思是用茜草染成的红色佩巾。《周礼》“地官.<br>司徒”：“掌染草，掌以春秋敛染草之物”，意即掌染春<br>者，专职掌理春秋二季征收染色用的植物”，其中包括茜<br>草、紫草等。</p>
+     </div>
+     <div class="xicao-button">
+        <img src="images/introduceFloat.png" id="xicao-button">
+     </div>
+     <div class="zhushang-title">
+        <img src="images/zhushangtitle.png" alt="朱裳标题">
+     </div>
+     <div class="zhushang" id="zhushang">
+        <img src="images/朱裳.png" alt="">
+     </div>
+     
+
+   </div> 
+
+    
+     <div class="part4">
+        <!-- <div class="yun2">
+            <img src="images/yun1.png" >
+        </div> -->
+
+        <div class="c-figure">
+            <div class="c-f1">
+                <img src="茜草.png" alt="">
+            </div>
+         </div>
+
+        <div class="mask-box">
+           <div class="color-bg orange-bg active" style="height: 100%">
+               <div class="color-text" style="transform: translate3d(-50%,0%);">
+                   <strong>一染谓之"縓" </strong>
+                   <p>"縓"是浅红色</p>
+   
+               </div>
+           </div>
+           <div class="color-bg blue-bg" style="height: 0%">
+               <div class="color-text">
+                   <strong>再染谓之"赪"</strong>
+                   <p>"赪"是红色</p>
+   
+               </div>
+           </div>
+   
+           <div class="color-bg black-bg" style="height: 0">
+               <div class="color-text">
+                   <strong>三染谓之"纁"</strong>
+                   <p>"纁"通“曛”意谓夕阳的光晕</p>
+   
+               </div>
+           </div>
+          
+        </div>
+
+        
+        </div>
+
+    <div class="part5">
+        <div class="title">
+         <p>《诗经》中植物信息繁杂，从百姓生活入手，选取和"衣“相关的染料植物和纤维植物<br>纤维植物有葛藤、苎麻、大麻以及桑蚕；染料植物有荩草、茜草、蓼蓝、柘树、郁金、<br>柘树。</p>
+        </div>
+        <div class="huajuan">
+            <img src="images/huajuan2.png" >
+
+            <div id="scrollbar">
+                <div class="box">
+                    <div class="inner" >
+                     <img src="images/juanzhou01.png" alt="1">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="jiantou">
+                <img src="images/jiantouicon.png" >
+            </div>
+            <div class="jiantou2">
+                <img src="images/jiantouicon2.png" >
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
+<script src="https://news.cgtn.com/event/2022/The-Song-Painted/JSstart/jquery-1.7.2.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"></script>
+
+<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/echarts-wordcloud@2.0.0/dist/echarts-wordcloud.min.js"></script>
+<script type="importmap">
+    {
+        "imports": {
+            "three": "../../../three.js/build/three.module.js",
+            "three/addons/": "../../../three.js/examples/jsm/"
+        }
+    }
+</script>
+
+<script src="shijing.js"></script>
+<script src="echart.js"></script>
+<script src="wordcloud.js"></script>
+<script src="3d.js" type="module"></script>
+
+</body>
+</html>
