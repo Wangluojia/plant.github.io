@@ -1,0 +1,1322 @@
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}  
+/* 引入外部字体 */
+@font-face{
+    font-family: 'lixukeshufa';
+    src: url(font/李旭科书法.ttf);
+
+}
+@font-face{
+    font-family: 'SourceHanSansCN';
+    src: url(font/SourceHanSansCN-Regular.otf);
+}
+@font-face{
+    font-family: 'SourceHanSansCN-Heavy';
+    src:url(font/SourceHanSansSC-Heavy.ttf);
+}
+
+.flowerBox{
+    /* margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    height: 100vh; */
+    background-image: url(images/repeatbg_total.jpg ) ;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+}
+
+
+.sticky-content{ 
+    position: sticky;
+    left:0;
+    top: 0; 
+    
+    width: 100%;
+    z-index: 2; 
+    opacity: 1;}
+
+.sticky-content img{
+     width:100%;
+    
+}
+
+
+.zhiranliao{
+    position: absolute;
+    z-index: 1;
+    right: 8%;
+    width: 450px;
+    margin-top: 660vh;
+}
+
+.huitu{
+    position: absolute;
+    z-index: 1;
+    right: 8%;
+    width: 450px;
+    margin-top: 760vh;
+}
+.ranbu{
+    position: absolute;
+    z-index: 1;
+    right: 8%;
+    width: 450px;
+    margin-top: 860vh;
+}
+.AR-face{
+    position: absolute;
+    z-index: 1;
+    right: 8%;
+    
+    margin-top: 890vh;
+}
+.AR-face img{
+    width: 50px;
+}
+
+
+.part1{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    z-index:5;
+    overflow: hidden;
+}
+
+.con{
+    position:relative;
+    height: 320vh;
+    
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.con .bg{
+    width:100%;
+    position:absolute;
+    z-index:2;}
+.con .bg img{
+    padding-top:13.3%;
+}
+
+
+
+   @keyframes shibowenImg {	
+       0%{background-position: 0px 0px;}
+       100%{background-position: 0px var(--shuiboweny);}
+   }
+   @-webkit-keyframes shibowenImg {
+       0%{background-position:0px 0px;}
+       100%{background-position: 0px var(--shuiboweny);}
+   }
+
+.part1 .zuoyanwu{
+    width:73.54%;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    z-index:3;
+	animation: smoke 30s linear infinite;
+    -webkit-animation: smoke 30s linear infinite;
+}
+.part1 .zuoyanwu1{
+    opacity:0;
+    top: 20%;
+    z-index: 4;
+	animation: smoke3 30s linear infinite;
+    -webkit-animation: smoke3 30s linear infinite;
+}
+
+#shuibowen{
+    position: absolute;
+    z-index: 4;
+}
+
+
+@keyframes smoke {
+	0% {
+	opacity: 0;
+	transform: translateX(-50%);-webkit-transform: translateX(-50%);
+	}
+	20% {
+	opacity: 1;
+	}
+	85% {
+	opacity: 1;
+	}
+	100% {
+	opacity: 0;
+	transform: translateX(80%);-webkit-transform: translateX(80%);
+	}
+}
+@-webkit-keyframes smoke {
+	0% {
+	opacity: 0;
+	transform: translateX(-50%);-webkit-transform: translateX(-50%);
+	}
+	20% {
+	opacity: 1;
+	}
+	85% {
+	opacity: 1;
+	}
+	100% {
+	opacity: 0;
+	transform: translateX(80%);-webkit-transform: translateX(80%);
+	}
+}
+@keyframes smoke2 {
+    0% {
+        opacity: 0;
+        transform: translateX(-80%);-webkit-transform: translateX(-80%);
+        }
+        20% {
+        opacity: 1;
+        }
+        85% {
+        opacity: 1;
+        }
+        100% {
+        opacity: 0;
+        transform: translateX(100%);-webkit-transform: translateX(100%);
+        }
+    }
+    @-webkit-keyframes smoke2 {
+    0% {
+        opacity: 0;
+        transform: translateX(-80%);-webkit-transform: translateX(-80%);
+        }
+        20% {
+        opacity: 1;
+        }
+        85% {
+        opacity: 1;
+        }
+        100% {
+        opacity: 0;
+        transform: translateX(100%);-webkit-transform: translateX(100%);
+        }
+    }
+    @keyframes smoke3 {
+        0% {
+        opacity: 0;
+        transform: translateX(-20%);-webkit-transform: translateX(-20%);
+        }
+        20% {
+        opacity: 1;
+        }
+        85% {
+        opacity: 1;
+        }
+        100% {
+        opacity: 0;
+        transform: translateX(130%);-webkit-transform: translateX(130%);
+        }
+    }
+    @-webkit-keyframes smoke3 {
+        0% {
+        opacity: 0;
+        transform: translateX(-20%);-webkit-transform: translateX(-20%);
+        }
+        20% {
+        opacity: 1;
+        }
+        85% {
+        opacity: 1;
+        }
+        100% {
+        opacity: 0;
+        transform: translateX(130%);-webkit-transform: translateX(130%);
+        }
+    }
+
+#flower1{
+    position: absolute;
+    margin-top: 0;
+    z-index: 6;
+
+}
+
+#flower2{
+    position: absolute;
+    margin-top: 0;
+    z-index: 6;
+}
+#flower3{
+    position: absolute;
+    z-index: 1;
+}
+#fly{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 15%;
+    top: 27%;
+    z-index: 7;
+}
+#flower4{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 80%;
+    top: 20vh;
+    z-index: 7;
+}
+#lianyi{
+    position: absolute;
+    margin-top: 32%;
+    left: 66%;
+    width: 200px;
+    height: 200px;
+    z-index: 5;
+}  
+#bigtitle{
+    position: absolute;
+    z-index: 7;
+    margin-top: 140px;
+}
+
+.zhonglei{
+    position: absolute;
+    z-index:17;
+    margin-top: 100vh;
+    height: 100vh;
+    width: 100%;
+}
+
+.flower6{
+    position: absolute;
+    height: 100vh;
+    left: 650px;
+    top: 400px;
+    z-index: 18;
+
+}
+.flower6 img{
+   
+    width: 500px;
+    left: 400px;
+    top:400px;
+    transform: translate(500px,400px) scale(2,2); 
+}
+/* .text{
+    width: 33.57%; 
+    position:absolute;
+     top: 4em;
+     left: 9.64%; 
+     color: #202020;
+     z-index: 8;
+     padding-top: 135vh;
+     height:65vh;
+}
+.text1{
+    width: 50%; 
+    position: absolute;
+    top: 4em;
+    left: 25%; 
+    color: #202020;
+    z-index: 8;
+    padding-top: 200vh;
+    height:65vh;
+    opacity: 0;
+}
+.huacong{
+    position: absolute;
+    height: 60vh;
+    top:1700px;
+    z-index: 9;
+
+}
+.huacong img{
+    top:1700px;
+    transform: translate(0,700px) scale(2,2);
+}
+
+
+.chudian1{
+    position: absolute; 
+    top: 1700px;
+    left: 8.0em; 
+    display: block;
+    z-index: 12; 
+    cursor: pointer;
+}
+.chudian1 span{
+    position: absolute;
+    display: block;
+    width: 2.0em;
+    height: 2.0em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px #ffffff;
+    opacity: 0.8;
+}
+.chudian1 span:nth-child(1){
+    border: 1.5px solid #ffffff;
+}
+.chudian1 span:nth-child(2){
+    animation: Seeking02first 4s linear 0s infinite;
+}
+.chudian1 span:nth-child(3){
+    animation: Seeking02first 4s linear 2s infinite;
+}
+
+
+.chudian-text{
+    display:none; 
+    text-align: center;
+    color: rgb(255 255 255);
+    width: 81.95%;
+    position: relative;
+    top: 1300px;
+    left: 1%;
+    z-index: 11;
+} 
+.chudian-text p{
+    font-size: .42em;
+    line-height: 1.4;  
+    z-index: 14;
+    position: absolute;
+    width:40%;
+    margin: 15 auto; 
+    padding-top: 30%; 
+}
+.chudian-text .chudian-img{
+    position: absolute;
+    width: 100%;
+    left: 20px;
+    z-index: 12;
+}  */
+
+@keyframes Seeking01first {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+        border: 1px solid #fff;
+    }
+
+    100% {
+        transform: scale(3);
+        opacity: 0;
+        border: 1px solid #fff;
+    }
+}
+
+@keyframes Seeking02first {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+        border: 1px solid #797c4b;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+        border: 1px solid #797c4b;
+    }
+}
+
+
+/* 诗经文字 */
+.shijing-text{
+    position: absolute;
+    z-index: 19;
+    font-family: SourceHanSansCN;
+    /* text-align: center; */
+    left: 10%;
+    line-height: 3em;
+    width: 33.57%; 
+    /* height: 65vh; */
+    letter-spacing: 0.3em;
+    padding-top: 60vh;
+    opacity: 1;
+    
+}
+.shijing-text h2{
+    font-size: 40px;
+}
+.shijing-text p{
+    
+    font-size: 20px;
+}
+#intorcefloat{
+    position: absolute;
+    z-index: 25;
+    width: 45px;
+    margin-top: 60vh;
+    left: 65%;
+}
+
+
+.cipin{
+    position: absolute;
+    z-index: 14;
+    margin-top: 200vh;
+    height: 100vh;
+    width: 100%;
+}
+.cipinbg {
+      position: absolute;
+      z-index: 15;
+      height: 100vh;
+      
+}
+.cipinbg img{
+   
+    transform: translate(-100rem,100rem) scale(15);
+}
+.cipintext{
+    opacity: 1;
+    position: absolute;
+    z-index: 16;
+    margin-top: 60vh;
+    height: 20vh;
+    font-family:SourceHanSansCN;
+    color: #fff;
+    text-align: center;
+    left: 20%;
+}
+.cipintext h2{
+    font-size: 60px;
+}
+.cipintext p{
+    font-size: 25px;
+}
+#intorcefloat2{
+    position: absolute;
+    z-index: 40;
+    margin-top: 60vh;
+    width: 45px;
+    left: 30%;
+}
+
+
+
+
+/* part2 染料植物 */
+.part2{
+    position: relative;
+    height: 300vh;
+    width: 100%;
+}
+.sang{
+   
+    position: absolute;
+    z-index: 27;
+    margin-top: -50vh;
+    height: 50vh;
+    left: 60%;
+    
+
+}
+.sang img{
+    opacity: 0;
+    scale:0.2;
+}
+.sang-tree{
+    position: absolute;
+    z-index: 30;
+    height: 50vh;
+    margin-top: 200px;
+    
+}
+.sang-tree img{
+    position:absolute;  
+    width: 1000px;
+    transform: translateY(20%);
+}
+
+
+.fangzhi{
+    position: absolute;
+    z-index: 25;
+    left: 70%;
+    margin-top: 60vh;
+    font-family: SourceHanSansCN;
+}
+.fangzhi h2{
+    font-size: 30px;
+}
+
+.fangzhi p{
+    font-size: 20px;
+    line-height: 2em;
+}
+.fangzhibg{
+    position: absolute;
+    z-index: 23;
+}
+.options{
+    position: absolute;
+    z-index: 28;
+}
+.can{
+    position: absolute;
+    z-index: 28;
+    width: 300px;
+    left: 600px;
+    margin-top: 400px;
+}
+.sangshen{
+    position:absolute;
+    z-index: 28;
+    width: 200px;
+    left: 450px;
+    margin-top:250px;
+}
+.sangshugen{
+    position: absolute;
+    z-index: 28;
+    width: 200px;
+    left: 700px;
+    margin-top:700px;
+    
+}
+.sangshen-sign{
+    position: absolute;
+    z-index: 29;
+    width: 70px;
+    margin-top: 150px;
+    left: 500px;
+}
+.sangcan-sign{
+    position: absolute;
+    z-index: 29;
+    width: 70px;
+    left: 700px;
+    margin-top: 380px;
+}
+.sangshugen-sign{
+    position: absolute;
+    z-index: 29;
+    width: 80px;
+    left:840px;
+    margin-top: 610px;
+}
+
+.can01{
+    display: none;
+    position: absolute;
+    z-index: 29;
+    width: 300px;
+    margin-top: 80px;
+    left: 35%;
+}
+.dama01{
+    display: none;
+    position: absolute;
+    z-index: 29;
+    width: 300px;
+    margin-top: 300px;
+    left: 42%;
+}
+.zhuma01{
+    display:none;
+    position: absolute;
+    z-index: 29;
+    width: 300px;
+    margin-top: 600px;
+    left: 50%;
+}
+
+/* 三个触点 */
+.chudian1{
+    position: absolute; 
+    margin-top: 300px;
+    left: 34%; 
+    display: block;
+    z-index: 30; 
+    cursor: pointer;
+}
+.chudian1 span{
+    position: absolute;
+    display: block;
+    width: 2.0em;
+    height: 2.0em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px #ffffff;
+    opacity: 0.8;
+}
+.chudian1 span:nth-child(1){
+    border: 1.5px solid #ffffff;
+}
+.chudian1 span:nth-child(2){
+    animation: Seeking02first 4s linear 0s infinite;
+}
+.chudian1 span:nth-child(3){
+    animation: Seeking02first 4s linear 2s infinite;
+}
+
+
+.chudian2{
+    position: absolute; 
+    margin-top: 490px;
+    left: 38%; 
+    display: block;
+    z-index: 30; 
+    cursor: pointer;
+}
+.chudian2 span{
+    position: absolute;
+    display: block;
+    width: 2.0em;
+    height: 2.0em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px #ffffff;
+    opacity: 0.8;
+}
+.chudian2 span:nth-child(1){
+    border: 1.5px solid #ffffff;
+}
+.chudian2 span:nth-child(2){
+    animation: Seeking02first 4s linear 0s infinite;
+}
+.chudian2 span:nth-child(3){
+    animation: Seeking02first 4s linear 2s infinite;
+}
+
+.chudian3{
+    position: absolute; 
+    margin-top: 790px;
+    left: 42%; 
+    display: block;
+    z-index: 30; 
+    cursor: pointer;
+}
+.chudian3 span{
+    position: absolute;
+    display: block;
+    width: 2.0em;
+    height: 2.0em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px #ffffff;
+    opacity: 0.8;
+}
+.chudian3 span:nth-child(1){
+    border: 1.5px solid #ffffff;
+}
+.chudian3 span:nth-child(2){
+    animation: Seeking02first 4s linear 0s infinite;
+}
+.chudian3 span:nth-child(3){
+    animation: Seeking02first 4s linear 2s infinite;
+}
+
+
+
+
+.ouma{
+    position: absolute;
+    z-index: 29;
+    height: 100vh;
+    width: 100%;
+    margin-top: 100vh;
+
+}
+.ouma-bg{
+    position: absolute;
+    z-index: 29;
+}
+
+.gema{
+    position: absolute;
+    z-index: 30;
+    width: 500px;
+    right: 10%;
+    top: 0;
+}
+.dama-card{
+    display: none;
+    position: absolute;
+    z-index: 31;
+    width: 300px;
+    right: 5%;
+    margin-top: 600px;
+}
+.sign01{
+    position: absolute;
+    z-index: 32;
+    right: 34%;
+    margin-top: 200px;
+    width: 60px;
+}
+.ouma1{
+    position: absolute;
+    z-index: 30;
+    width: 800px;
+    right: 15%;
+    top: 580px;
+}
+.sign02{
+    position: absolute;
+    z-index: 32;
+    width: 60px;
+    right: 13%;
+    margin-top: 750px;
+}
+.ouma2{
+    position: absolute;
+    z-index: 30;
+    width: 500px;
+    left: 10%;
+    margin-top: 950px;
+}
+.wanmatuan{
+    display: none;
+    position: absolute;
+    z-index: 31;
+    width: 300px;
+    margin-top: 1000px;
+    left: 30%;
+}
+.ouma3{
+    position: absolute;
+    z-index: 30;
+    width: 600px;
+    margin-top: 1300px;
+    left: 30%;
+}
+.shuajiang{
+    display: none;
+    position: absolute;
+    z-index: 31;
+    width: 300px;
+    margin-top: 1450px;
+    left: 17%;
+}
+.ouma4{
+    position: absolute;
+    z-index: 30;
+    width: 550px;
+    margin-top: 1400px;
+    right: 0;
+}
+.bianzhi{
+    display: none;
+    position: absolute;
+    z-index: 31;
+    width: 300px;
+    right: 2%;
+    margin-top: 1230px;
+}
+.dama02{
+    display: none;
+    position: absolute;
+    z-index: 40;
+    width: 250px;
+    margin-top: 300px;
+    right: -6%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease; /* 添加过渡效果 */
+}
+.wanmatuan02{
+    display: none;
+    position: absolute;
+    z-index: 40;
+    width: 250px;
+    margin-top: 1070px;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease; /* 添加过渡效果 */
+}
+.sign03{
+    position: absolute;
+    z-index: 32;
+    width: 60px;
+    left: 10%;
+    margin-top: 900px;
+}
+.sign04{
+    position: absolute;
+    z-index: 32;
+    width: 60px;
+    margin-top: 1290px;
+    left: 59%;
+}
+.sign05{
+    position: absolute;
+    z-index: 32;
+    width: 60px;
+    margin-top: 1330px;
+    right: 2%;
+}
+.ouma-text{
+    position: absolute;
+    width: 100%;
+    margin-top: 30vh;
+}
+.ouma-text img{
+    position: absolute;
+    z-index: 30;
+    left: 35%;
+    width: 90px;
+}
+.ouma-text p{
+    position: absolute;
+    z-index: 30;
+    font-family: SourceHanSansCN;
+    font-size: 25px;
+    line-height: 1.7em;
+    left:400px;
+    margin-top: 10vh;
+}
+.p2{
+    position: absolute;
+    z-index: 30;
+    width: 100%;
+    margin-top: 70vh;
+}
+
+.p2 p{
+    position: absolute;
+    z-index: 30;
+    font-size: 25px;
+    font-family: SourceHanSansCN;
+    left: 400px;
+    line-height: 1.7em;
+}
+
+#model-container{
+    position: absolute;
+    z-index: 31;
+    margin-top: 60vh;
+}
+
+
+
+
+.ar{
+    position: absolute;
+    z-index: 10;
+}
+.ar #introduce2{
+    position: absolute;
+    z-index: 10;
+    margin-top: 240vh;
+    margin-left: 1400px;
+    width: 60px;
+    
+}
+
+
+
+.part3{
+    position: relative;
+    height: 120vh;
+    overflow-x: hidden;
+}
+.huacong{
+    position: absolute;
+    z-index: 32;
+    width: 100%;
+    height: 60vh;
+    
+}
+.huacong img{
+    margin-top:-400px;
+    
+    transform: translate(0,0) scale(2);
+}
+/* 三个触点 */
+/* 郁金触点 */
+.chudian01{
+    position: absolute; 
+    margin-top: 300px;
+    left: 13%; 
+    display: block;
+    z-index: 33; 
+    cursor: pointer;
+}
+.chudian01 span{
+    position: absolute;
+    display: block;
+    width: 2.0em;
+    height: 2.0em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px #ffffff;
+    opacity: 0.8;
+}
+.chudian01 span:nth-child(1){
+    border: 1.5px solid #ffffff;
+}
+.chudian01 span:nth-child(2){
+    animation: Seeking02first 4s linear 0s infinite;
+}
+.chudian01 span:nth-child(3){
+    animation: Seeking02first 4s linear 2s infinite;
+}
+/* 蓼蓝触点 */
+/* 三个触点 */
+.chudian02{
+    position: absolute; 
+    margin-top: 300px;
+    left: 30%; 
+    display: block;
+    z-index: 33; 
+    cursor: pointer;
+}
+.chudian02 span{
+    position: absolute;
+    display: block;
+    width: 2.0em;
+    height: 2.0em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px #ffffff;
+    opacity: 0.8;
+}
+.chudian02 span:nth-child(1){
+    border: 1.5px solid #ffffff;
+}
+.chudian02 span:nth-child(2){
+    animation: Seeking02first 4s linear 0s infinite;
+}
+.chudian02 span:nth-child(3){
+    animation: Seeking02first 4s linear 2s infinite;
+}
+
+
+
+.yujin01{
+    display: none;
+    position: absolute;
+    z-index: 30;
+    left: 10%;
+    width: 300px;
+    margin-top: 10vh;
+}
+
+
+.text1{
+    
+    position: absolute;
+    top: 4em;
+    left: 25%; 
+    color: #202020;
+    height:65vh;
+}
+.text1{
+    font-size: 20px;
+    font-family: SourceHanSansCN;
+    line-height: 1.5em;
+}
+
+/* 染料植物介绍部分 */
+.part6{
+    position: relative;
+    height: 200vh;
+    width: 100%;
+    background: url(images/repeatbg_ranliao.jpg)repeat-y center center;
+    background-size: 100% auto;
+}
+.jincao{
+    position: absolute;
+    left: 10%;
+    width: 400px;
+    margin-top: 80px;
+}
+.hudie{
+    position: absolute;
+    z-index: 3;
+    left: 9%;
+    margin-top: 100px;
+}
+.hudie #hudie_left{
+    width: 200px;
+    margin-top: 100px;
+    
+}
+.hudie #hudie_right{
+    width: 300px;
+    margin-top: 20px;
+}
+.jincao-text{
+    position: absolute;
+    z-index: 4;
+    width:100%;
+}
+.jincao-text img{
+    position:absolute;
+    width: 330px;
+    left: 55%;
+    margin-top:150px;
+}
+.jincao-text p{
+    position: absolute;
+    z-index: 4;
+    font-family:'SourceHanSansCN';
+    font-size: 28px;
+    margin-top: 270px;
+    right:13%;
+    color: #414141;
+    line-height: 1.7em;
+}
+.jincao-button{
+    position: absolute;
+    z-index: 8;
+    width: 70px;
+    right: 3%;
+    margin-top: 83vh;
+}
+.huangshangtext{
+    position:absolute;
+    z-index: 8;
+    width: 60px;
+    right: 3%;
+    margin-top: 70vh;
+}
+#huangshang{
+    display: none;
+    position: absolute;
+    z-index: 7;
+    width: 450px;
+    margin-top: 55vh;
+    right: 8%;
+}
+
+.xicao{
+    position: absolute;
+    z-index: 10;
+    margin-top: 110vh;
+    left: 0%;
+    width: 800px;
+    transform: rotateZ(-10deg);
+}
+.xicao-text{
+    position:absolute;
+    z-index: 10;
+    margin-top: 120vh;
+    left: 45%;
+}
+.xicao-text p{
+    font-size: 28px;
+    font-family:'SourceHanSansCN';
+    line-height: 1.7em;
+    color: #414141;
+}
+.xicao-button{
+    position: absolute;
+    margin-top: 160vh;
+    width: 70px;
+    right: 3%;
+}
+.zhushang-title{
+    position: absolute;
+    right: 3%;
+    margin-top: 170vh;
+    width: 60px;
+}
+.zhushang{
+    display: none;
+    position: absolute;
+    width: 500px;
+    margin-top: 155vh;
+    right: 8%;
+}
+
+
+
+
+
+
+
+
+
+/* 三染换色 */
+.part4{
+     position: relative;
+     height: 100vh;
+     width: 100%;
+        
+}
+
+
+/* 
+.yun2{
+    position: absolute;
+    margin-top: 35%;
+    width: 100%;
+    height: 10px;
+    z-index: 20;
+}
+.yun2 img{
+    position: absolute;
+    transform: translateY(30%);
+
+}
+ */
+
+/* 中间固定染料植物 */
+.c-figure{
+    
+    position: absolute;
+    width: 461px;
+    margin: 0;
+    height: 100vh;
+    min-height: 750px;
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -25%);
+    z-index: 33;
+}
+
+/* 背景颜色更换 */
+.color-bg {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-image: url(images/texture.png);
+  }
+  .color-bg.orange-bg {
+    
+    background-color: #eea2a4;
+  }
+  .color-bg.blue-bg {
+    background-color: #813027;
+  }
+  .color-bg.black-bg {
+    
+    background-color: #b94545;
+  }
+.mask-box {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    min-height: 750px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    
+  }
+
+  .color-text {
+    width: 500px;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'lixukeshufa';
+  }
+  .color-text strong {
+    font-size: 70px;
+  }
+
+  .color-text p {
+    font-size: 34px;
+  }
+  .orange-bg strong {
+    color: #ffffff;
+  }
+  .orange-bg p {
+    color: #ffffff;
+  }
+  .blue-bg strong {
+    color: #ffffff;
+  }
+  .blue-bg p {
+    color: #ffffff;
+  }
+  .black-bg strong {
+    color: #ffffff;
+  }
+  .black-bg p {
+    color: #ffffff;
+  }
+
+
+
+
+.part5{
+    position: relative;
+    z-index: 34;
+    height: 100vh;
+    padding-top:3.7em;
+}
+.title{
+    position: absolute;
+    z-index: 35;
+    height: 40vh;
+    margin-top: 70px;
+    left: 20%;
+}
+.title p{
+    font-size: 27px;
+    font-family: SourceHanSansCN;
+    line-height: 1.7em;
+}
+.huajuan{
+    position:relative;
+    margin-top: 30vh;
+    width:80%;
+    left: 10%;
+    overflow: hidden;
+}
+
+
+.box{
+    position:absolute;
+    left:70px;
+    height: 100%;
+    top: 90px;
+    width:100%;
+    overflow:hidden;
+}
+#scrollbar{
+    position: absolute;
+    z-index: 35;
+    height: 60%;
+    width: 90%;
+    left: 0;
+    top: 5%;
+}
+.inner{
+    background-color: #202020;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    list-style: none;
+    width: 1900px;
+}
+.inner img{
+    position: absolute;
+    height: 100%;
+    width: auto;
+    float: right; 
+    /* display: inline-block; */
+   
+}
+/* .inner img:first-of-type{margin-right: 0;} */
+
+
+.jiantou{
+    cursor:pointer;
+    right: 4%;
+    top:50%;
+    position: absolute;
+    z-index: 37;
+    width: 2rem;
+    transform:translate(0px, -50%);
+}
+.jiantou2{
+    cursor: pointer;
+    position: absolute;
+    z-index: 37;
+    left: 4%;
+    top: 50%;
+    width: 2rem;
+    transform: translate(0px,-50%);
+}
